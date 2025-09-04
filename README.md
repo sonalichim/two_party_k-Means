@@ -15,4 +15,34 @@ The project explores the design and implementation of cryptographic algorithms a
 - Works on Linux / macOS command prompt
 
 ## 🚀 How to Build & Run
--
+- 
+- Command to build: 
+  1. In directory of party B or Bob: g++ --std=c++11 -g getPrime.cpp PaillierSystem.cpp server.cpp kMeansSubProtocols.cpp kMeansProtocol.cpp main.cpp -lgmp -o kMeansBob
+  2. 1. In directory of party A or Alice: g++ --std=c++11 -g getPrime.cpp PaillierSystem.cpp client.cpp kMeansSubProtocols.cpp kMeansProtocol.cpp main.cpp -lgmp -o kMeansAlice
+
+## Repository Structure 
+two_party_k-Means/
+│── k-means_A/                 # Party A (generates public-private key pair)
+    |── k-means_Alice/         # This directory contains data of party A
+    |── client.cpp             # TCP connection establishment with party B
+    |── PaillierSystem.cpp     # Paillier function
+    |── kMeansProtocol.cpp     # k-Means protocol for party A
+    |── kMeansSubProtocols.cpp # k-Means sub-protocol
+    |── main.cpp               # main entry point
+    
+│── k-means_B/                 # Party B
+    |── k-means_Bob/           # This directory contains data of party B
+    |── server.cpp             # TCP connection establishment with party A
+    |── PaillierSystem.cpp     # Paillier function
+    |── kMeansProtocol.cpp     # k-Means protocol for party B
+    |── kMeansSubProtocols.cpp # k-Means sub-protocol
+    |── main.cpp               # main entry point
+
+
+
+
+
+
+
+
+
