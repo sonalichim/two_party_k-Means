@@ -19,7 +19,7 @@ void kMeansProtocol::readOwnData()
     double var;
     
     fstream file;
-    file.open ("/Users/sonalichim/Dropbox/Code/Sonali/k-Means/k-means_A/k-means_Alice/wdbc.data");
+    file.open (DBFILE);
     //file.open ("./k-means_Alice/wdbc.data");
     
     if(! file.is_open())
