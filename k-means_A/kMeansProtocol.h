@@ -25,6 +25,7 @@
 #define SCALING 1
 #define SLEEPTIME 0
 
+#defibe DBFILE "./k-means_A/k-means_Alice/wdbc.data"
 
 //#define pickRandom
 
